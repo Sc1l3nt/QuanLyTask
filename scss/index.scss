@@ -1,0 +1,54 @@
+$text-c1-secondary: #adb5bd;
+$text-c1-light: #ffffff;
+$text-c1-success: #25b99a;
+$text-c1-pink: rgba(222, 57, 99, 0.6);
+$bd-c1-success: #25b99a;
+$bd-c1-secondary: #adb5bd;
+$bg-c1-success: #25b99a;
+$bg-c1-secondary: #adb5bd;
+$bg-none: none;
+
+li{
+    .button{
+        button{
+            background: $bg-none;
+            border: none;
+            margin-right: 5px;
+            .icon{
+                cursor: pointer;
+                color: $text-c1-secondary;
+                transition: all 0.5s;
+            }
+        }
+        .remove{
+            .icon{
+                font-size: 18px;
+                transform: translateY(2px);
+                &:hover{
+                    color: $text-c1-pink;
+                }
+            }
+        }
+        .btnCheckOff{
+            .icon{
+                font-size: 14px;
+                border: 2px solid $bd-c1-secondary;
+                border-radius: 50%;
+                background: $bg-c1-secondary;
+                color: $text-c1-light;
+                transform: translateY(2px);
+                &:hover{
+                    border-color: $bd-c1-success;
+                    background: $bg-c1-success;
+                }
+            }
+        }
+        .btnCheckOn{
+            .icon{
+                font-size: 18px;
+                color: $text-c1-success;
+                transform: translateY(4px);
+            }
+        }
+    }
+}
